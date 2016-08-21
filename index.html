@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>お客さんカウンター</title>
+</head>
+<body style="text-align:center">
+<p id="num" style="font-size:25px;text-align:center;">0</p>
+<button onclick="count()" style="height:40px;width:120px;">カウント</button><br><br>
+<button onclick="dec()" style="height:30px;width:120px;">-1</button>
+<script type="text/javascript">
+	var countnum=0;
+	var num=document.getElementById('num');
+	function count() {
+		countnum++;
+		num.innerHTML=countnum;
+	}
+	function dec() {
+		countnum-=1;
+		num.innerHTML=countnum;
+	}
+</script>
+</body>
+</html>
